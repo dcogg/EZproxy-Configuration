@@ -1,0 +1,7 @@
+If auth:NameID ne ""; Set login:loguser = auth:NameID
+If auth:NameID eq "ogg"; admin
+If Any(auth:http://schemas.xmlsoap.org/claims/Group, "CISL CUUCAREZProxy"); Stop
+Deny
+
+# If auth:http://schemas.xmlsoap.org/claims/Group != "CISL CUUCAREZProxy"; Deny
+# If Any(auth:http://schemas.xmlsoap.org/claims/Group, "CISL CUUCAREZProxy"); Deny

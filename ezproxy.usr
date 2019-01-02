@@ -1,0 +1,6 @@
+#
+::Shibboleth
+Group NULL
+IDP20 https://sts.ucar.edu/adfs/services/trust
+/Shibboleth
+#
